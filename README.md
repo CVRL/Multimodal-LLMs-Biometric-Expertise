@@ -15,7 +15,7 @@ Official repository for the IEEE Access paper: **IEEEXplore | [ArXiv]()**
 ## Embedding Visualization
 <p align="center">
   <img src="Assets/image_only.png" width="45%" />
-  <img src="Assets/short_prompt.png" width="45%" />
+  <img src="Assets/short_prompt.png" width="50%" />
 </p>
 
 
