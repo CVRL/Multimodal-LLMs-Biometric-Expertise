@@ -29,7 +29,15 @@ Each entry in the dataset contains the following:
 Instructions on how to obtain a copy of the dataset can be found at the [Notre Dame's Computer Vision Research Lab webpage](https://cvrl.nd.edu/projects/data/#autosight-2025-dataset) (Name TBD). Any questions can be directed to Adam Czajka at aczajka@nd.edu.
 
 ## Citation
-
+```
+@article{piland2026generalist,
+  title={Generalist Multimodal LLMs Gain Biometric Expertise via Human Salience for Iris Presentation Attack Detection},
+  author={Piland, Jacob and Dowling, Byron and Sweet, Christopher and Czajka, Adam},
+  journal={IEEE Access},
+  year={2026},
+  publisher={IEEE}
+}
+```
 
 ## Acknowledgments
 
