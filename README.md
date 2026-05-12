@@ -28,6 +28,38 @@ Each entry in the dataset contains the following:
 #### Requesting a Copy of the Dataset
 Instructions on how to obtain a copy of the dataset can be found at the [Notre Dame's Computer Vision Research Lab webpage](https://cvrl.nd.edu/projects/data/#autosight-2025-dataset) (Name TBD). Any questions can be directed to Adam Czajka at aczajka@nd.edu.
 
+#### Example JSON Object
+```
+{
+        "irisImageLink": "268_245_live.png",
+        "attackType": "Live",
+        "humanExaminers": [
+            {
+                "identifier": "E_068",
+                "correctlyClassified": true,
+                "verbalDescription": "I'll go normal initially..."
+            },
+            {
+                "identifier": "NE_057",
+                "correctlyClassified": true,
+                "verbalDescription": "I'll say normal..."
+            },
+            {
+                "identifier": "NE_061",
+                "correctlyClassified": true,
+                "verbalDescription": "Um. Normal. I think this just..."
+            },
+            {
+                "identifier": "NE_064",
+                "correctlyClassified": true,
+                "verbalDescription": "This is a normal eye..."
+            }
+        ],
+        "Llama_MESH": "COMPREHENSIVE IRIS DESCRIPTION\n\nPhysical Description: The iris exhibits a natural texture with visible patterns...",
+        "Gemini_MESH": "**ANALYSIS SUMMARY**\n**Image Classification:** Live\n**Confidence:** High\n**Key Features Observed:** The image shows a well-defined iris structure with a visible collarette and natural, albeit slightly blurred, texture..."
+    }
+```
+
 ## Citation
 ```
 @article{piland2026generalist,
