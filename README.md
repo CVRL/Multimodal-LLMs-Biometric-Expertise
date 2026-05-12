@@ -26,7 +26,10 @@ Each entry in the dataset contains the following:
 * Llama MESH Description
 
 #### Requesting a Copy of the Dataset
-Instructions on how to obtain a copy of the dataset can be found at the [Notre Dame's Computer Vision Research Lab webpage](https://cvrl.nd.edu/projects/data/#autosight-2025-dataset) (Name TBD). Any questions can be directed to Adam Czajka at aczajka@nd.edu.
+Instructions on how to obtain a copy of the dataset can be found at the [Notre Dame's Computer Vision Research Lab webpage](https://cvrl.nd.edu/projects/data/#autosight-2025-dataset) (Generalist-MLLMs-MESH Dataset). Any questions can be directed to Adam Czajka at aczajka@nd.edu.
+
+#### Details
+The dataset is organized on a per-image basis. Each object contains a reference to the iris sample and the attack type the sample represents with Live indicating Bonafide whereas everything else is a Spoof category. Additionally there is a list of human examiner objects. These objects contain a unique participant identifier, a status of whether the examiner correctly classified the sample, and their verbal descriptions while assessing the image. The final two JSON keys are the syntheisized M.E.S.H descriptions for the sample for Llama 3.2-vision:90b and Gemini 2.5 respectively.
 
 #### Example JSON Object
 ```json
