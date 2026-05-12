@@ -29,7 +29,7 @@ Each entry in the dataset contains the following:
 Instructions on how to obtain a copy of the dataset can be found at the [Notre Dame's Computer Vision Research Lab webpage](https://cvrl.nd.edu/projects/data/#autosight-2025-dataset) (Name TBD). Any questions can be directed to Adam Czajka at aczajka@nd.edu.
 
 #### Example JSON Object
-```
+```json
 {
         "irisImageLink": "268_245_live.png",
         "attackType": "Live",
