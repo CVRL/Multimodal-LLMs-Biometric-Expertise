@@ -29,7 +29,16 @@ Each entry in the dataset contains the following:
 Instructions on how to obtain a copy of the dataset can be found at the [Notre Dame's Computer Vision Research Lab webpage](https://cvrl.nd.edu/projects/data/#autosight-2025-dataset) (Generalist-MLLMs-MESH Dataset). Any questions can be directed to Adam Czajka at aczajka@nd.edu.
 
 #### Details
-The dataset is organized on a per-image basis. Each object contains a reference to the iris sample and the attack type the sample represents with Live indicating Bonafide whereas everything else is a Spoof category. Additionally there is a list of human examiner objects. These objects contain a unique participant identifier, a status of whether the examiner correctly classified the sample, and their verbal descriptions while assessing the image. The final two JSON keys are the syntheisized M.E.S.H descriptions for the sample for Llama 3.2-vision:90b and Gemini 2.5 respectively.
+The dataset is organized on a per-image basis. Each object contains a reference to the iris sample and the attack type the sample represents with Live indicating Bonafide whereas everything else is a Spoof category. Additionally there is a list of human examiner objects. These objects contain a unique participant identifier, a status of whether the examiner correctly classified the sample, and their verbal descriptions while assessing the image. The final two JSON keys are the syntheisized M.E.S.H descriptions for the sample for Llama 3.2-vision:90b and Gemini 2.5 respectively. A summary of each JSON object entry is below:
+* Link to the original dataset image
+* Ground truth image label
+* List of human examiner feedback which includes:
+  * Unique participant identifier
+  * 'E' for Expert, 'NE' for non-expert
+  * Indication if image was correctly classified, true or false
+  * Textual descriptions made during image assessment
+* Llama MESH description
+* Gemini MESH description
 
 #### Example JSON Object
 ```json
