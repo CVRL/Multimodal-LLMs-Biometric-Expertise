@@ -20,22 +20,22 @@ Official repository for the IEEE Access paper: **[IEEEXplore](https://ieeexplore
 
 ## Dataset Overview
 #### Summary
-Each entry in the dataset contains the following:
-* Reference to the iris sample in question
-* Gemini MESH Description
-* Llama MESH Description
-
-#### Requesting a Copy of the Dataset
-Instructions on how to obtain a copy of the dataset can be found at the [Notre Dame's Computer Vision Research Lab webpage](https://cvrl.nd.edu/projects/data/#autosight-2025-dataset) (Generalist-MLLMs-MESH Dataset). Any questions can be directed to Adam Czajka at aczajka@nd.edu.
+At a high level, the dataset is organized on a per image basis with each object containing the following information:
+* What image the object is referring to
+* Which human examiners were shown this image, what their comments were, and if they correctly classifed the sample
+* The final Gemini MESH description for the sample
+* The final Llama MESH description for the sample
 
 #### Details
-The dataset is organized on a per-image basis. Each object contains a reference to the iris sample and the attack type the sample represents with Live indicating Bonafide whereas everything else is a Spoof category. Additionally there is a list of human examiner objects. These objects contain a unique participant identifier, a status of whether the examiner correctly classified the sample, and their verbal descriptions while assessing the image. The final two JSON keys are the syntheisized M.E.S.H descriptions for the sample for Llama 3.2-vision:90b and Gemini 2.5 respectively. A summary of each JSON object entry is below:
-* Link to the original dataset image
-* Ground truth image label
+The dataset is organized as a list of JSON objects where each object refers to an iris sample from the dataset described in the paper. Each JSON object contains a reference to the iris sample and the attack type the sample represents with Live indicating Bonafide, or Spoof indicating some type of presentation attack category. Additionally there is a list of human examiner objects. These objects contain a unique participant identifier, a status of whether the examiner correctly classified the sample, and their verbal descriptions while assessing the image. The data from this list of human examiners is what was fed to the model via few-shot learning along with the prompt to generate the MESH descriptions. The final two JSON keys are the result of this process with syntheisized M.E.S.H descriptions for the sample from Llama 3.2-vision:90b and Gemini 2.5 respectively.
+
+A summary of each JSON object entry is below:
+* Link to the original dataset: png filename
+* Ground truth image label: Live or Spoof
 * List of human examiner feedback which includes:
   * Unique participant identifier
   * 'E' for Expert, 'NE' for non-expert
-  * Indication if image was correctly classified, true or false
+  * Indication if image was correctly classified: true or false
   * Textual descriptions made during image assessment
 * Llama MESH description
 * Gemini MESH description
@@ -71,6 +71,9 @@ The dataset is organized on a per-image basis. Each object contains a reference 
         "Gemini_MESH": "**ANALYSIS SUMMARY**\n**Image Classification:** Live\n**Confidence:** High\n**Key Features Observed:** The image shows a well-defined iris structure with a visible collarette and natural, albeit slightly blurred, texture..."
     }
 ```
+
+#### Requesting a Copy of the Dataset
+Instructions on how to obtain a copy of the dataset can be found at the [Notre Dame's Computer Vision Research Lab webpage](https://cvrl.nd.edu/projects/data/#autosight-2025-dataset) (Generalist-MLLMs-MESH Dataset). Any questions can be directed to Adam Czajka at aczajka@nd.edu.
 
 ## Citation
 ```
