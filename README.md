@@ -73,7 +73,7 @@ A summary of each JSON object entry is below:
 ```
 
 #### Requesting a Copy of the Dataset
-Instructions on how to obtain a copy of the dataset can be found at the [Notre Dame's Computer Vision Research Lab webpage](https://cvrl.nd.edu/projects/data/#autosight-2025-dataset) (Generalist-MLLMs-MESH Dataset). Any questions can be directed to Adam Czajka at aczajka@nd.edu.
+Instructions on how to obtain a copy of the dataset can be found at the [Notre Dame's Computer Vision Research Lab webpage](https://cvrl.nd.edu/projects/data/#generalist-mllms-mesh-dataset) (Generalist-MLLMs-MESH Dataset). Any questions can be directed to Adam Czajka at aczajka@nd.edu.
 
 ## Citation
 ```
